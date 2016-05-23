@@ -1,0 +1,5 @@
+---
+- name: Install Open JDK
+  apt: name={{ item }} state=latest
+  with_items:
+    - openjdk-7-jdk
