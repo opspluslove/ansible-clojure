@@ -3,14 +3,24 @@
 clojure
 =========
 
+In your [requirements file](https://galaxy.ansible.com/intro):
+
+```
+- src: opspluslove.clojure
+  version: v1.0.0
+```
+
+----
+
 Ansible role to setup everything to run clojure projects
-
-Role Variables
---------------
-
-_TODO_
 
 Example Playbook
 ----------------
 
-_TODO_
+```
+- hosts: main-server
+  remote_user: root
+
+  roles:
+    - opspluslove.clojure
+```
